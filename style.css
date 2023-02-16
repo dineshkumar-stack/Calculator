@@ -1,0 +1,145 @@
+h1 ,#description{
+    text-align: center;
+    font-family: "digital";
+    font-size: 5ch;
+    color:  greenyellow;
+}
+body{
+    background-color: black;
+}
+#result{
+  text-align: right;
+  background-color: rgb(255, 255, 255);
+  margin: 12px;
+  width: 90%;
+  height: 4ch;
+  border-radius: 4px;
+  border: none;
+  font-size: 3.5ch;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  background: #1e1e1e;
+  color: greenyellow;
+  box-shadow: 0 0 10px #72ff59, inset 0 0 10px #89da6b;
+}
+
+@font-face {
+    font-family: "digital";
+    src: url(image/Digital7Mono-Yz9J4.ttf);
+}
+
+.text-right{
+    /* display: inline-block;  */
+    text-align: right;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 4ch;
+    border-radius: 4px;
+    border: none;
+    font-size: 3.5ch;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: black;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: #1e1e1e;
+    color: greenyellow;
+    box-shadow: 0 0 10px #72ff59, inset 0 0 10px #89da6b;
+
+}
+
+
+.btn-toolbar {
+    font-family: "digital";
+    background-color: rgb(141, 140, 140);
+    box-shadow: 10px 5px 100px 5px #579666;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 9px 08px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+button {
+    background-color: rgb(196, 196, 196);
+    border: none;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    margin: 5px;
+    font-size: 3.5ch;
+
+
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    background: #1e1e1e;
+    color: greenyellow;
+    box-shadow: 0 0 10px #363636, inset 0 0 10px #363636;
+
+}
+
+
+
+.equal {
+    background-color: rgb(41, 190, 11);
+    border-radius: 5px;
+    width: 39%;
+    padding: 10px 25px;
+    margin: 5px;
+    font-size: 3.5ch;
+    color: white;
+    box-shadow: 0 0 10px #72ff59, inset 0 0 10px #89da6b;
+}
+
+.mulit,
+.divide,
+.sub,
+.add {
+    color: greenyellow;
+    font-size: 3.5ch;
+}
+
+.clean {
+    color: red;
+}
+
+
+button:hover {
+  animation: a 0.5s 1 linear;
+}
+
+@keyframes a {
+  0% {
+    transform: scale(0.8, 1.0);
+  }
+
+  25% {
+    transform: scale(1.0, 0.8);
+  }
+
+  50% {
+    transform: scale(0.7, 1.0);
+  }
+
+  75% {
+    transform: scale(1.0, 0.6);
+  }
+}

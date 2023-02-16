@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="image/calculate+calculation+calculator+general+math+office-1320183160073420774.png">
+</head>
+<body>
+    <h1 id="title">Calculator</h1>
+    <p id="description">
+    Ver 1
+     </p>
+    <div class="container"> 
+        <div class="btn-toolbar" class="text-bg-primary p-3"><br>
+            <input type="text" id="result" placeholder="0" disabled>
+            <div type="text" class="text-right" id="result1" placeholder="0"></div><br>
+            <button type="button" id="clear" onclick="clean(this)">C</button>
+            <button type="button" style="font-size: 3.3ch;" id="removeBtn"><code>&#8592;</code></button>
+            <button type="button" onclick="clicking(this)" class="dot">.</button>
+            <button type="button" onclick="clicking(this)" class="mulit">*</button><br>
+
+           <button  type="button" onclick="clicking(this)" id="7" class="7">7</button>
+           <button  type="button" onclick="clicking(this)" id="8" class="8">8</button>
+           <button  type="button" onclick="clicking(this)" id="9" class="9">9</button>
+           <button  type="button" onclick="clicking(this)" class="divide">/</button><br>
+
+
+           <button  type="button" onclick="clicking(this)" id="4" class="4">4</button>
+           <button  type="button" onclick="clicking(this)" id="5" class="5">5</button>
+           <button  type="button" onclick="clicking(this)" id="6" class="6">6</button>
+           <button  type="button" onclick="clicking(this)" id="subtract" class="sub">-</button><br>
+
+           <button  type="button" onclick="clicking(this)" id="1" class="1">1</button>
+           <button  type="button" onclick="clicking(this)" id="2" class="2">2</button>
+           <button  type="button" onclick="clicking(this)" id="3" class="3">3</button>
+           <button  type="button" onclick="clicking(this)" id="add" class="add">+</button><br>
+
+           <button  type="button" onclick="clicking(this)" class="zero">0</button>
+           <button  type="button" onclick="clicking(this)" class="zeroo">00</button>
+           <button  type="button" onclick="evaluate1(this)" id="equal" class="equal">=</button><br>
+        </div>     
+    </div>
+
+<script>
+    const element = document.getElementById("result1");
+    const removeBtn = document.getElementById("removeBtn");
+  
+    removeBtn.addEventListener("click", function() {
+      let innerText = element.innerText;
+      innerText = innerText.substring(0, innerText.length - 1);
+      element.innerText = innerText;
+    });
+
+  </script>
+ 
+  
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  
+    
+</body>
+</html>
